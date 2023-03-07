@@ -22,3 +22,5 @@ jobs:
         
       - name: Run E2E tests
         run: ${{ github.event.inputs.cli }}
+    env:
+      TARGET_TOKEN_ELECTRON: ${{ secrets.TARGET_TOKEN_ELECTRON }}
